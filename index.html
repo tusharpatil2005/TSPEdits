@@ -1508,6 +1508,90 @@
       .form-row {
         grid-template-columns: 1fr;
       }
+
+
+
+
+      .experience-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .experience-card {
+        padding: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.025);
+        transition: transform 0.3s ease, border-color 0.3s ease;
+      }
+
+      .experience-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255, 255, 255, 0.25);
+      }
+
+      .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+      }
+
+      .experience-tag {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #aaa;
+      }
+
+      .experience-header h3 {
+        margin: 10px 0 5px;
+        font-size: 22px;
+      }
+
+      .experience-header h4 {
+        margin: 0;
+        color: #aaa;
+        font-weight: 400;
+      }
+
+      .experience-date {
+        font-size: 13px;
+        color: #ccc;
+        white-space: nowrap;
+      }
+
+      .experience-intro {
+        color: #aaa;
+        line-height: 1.8;
+        margin-bottom: 18px;
+      }
+
+      .experience-points {
+        padding-left: 20px;
+        color: #aaa;
+        line-height: 1.9;
+        margin-bottom: 22px;
+      }
+
+      .experience-points li {
+        padding-left: 5px;
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 600px) {
+        .experience-card {
+          padding: 20px;
+        }
+
+        .experience-header h3 {
+          font-size: 19px;
+        }
+      }
+
     }
   </style>
 </head>
@@ -1536,15 +1620,19 @@
   <div class="layout">
     <!-- SIDEBAR -->
     <aside class="sidebar">
-      <div class="avatar-wrap">
+      <aside class="sidebar">
+    <div class="avatar-wrap">
         <div class="avatar-ring"></div>
-        <div class="avatar-inner"><span style="color:var(--accent2);">TS</span><span style="color:var(--text);">P</span>
+        <div class="avatar-inner">
+            <img src="./520.jpeg" alt="Tushar Patil"
+                 style="width:100%; height:100%; object-fit:cover; border-radius:50%; display:block;">
         </div>
-      </div>
+    </div>
+</aside>
 
       <div class="profile-name">Tushar Sanjay<br>Patil</div>
-      <div class="profile-role">Freelance Video Editor</div>
-      <span class="tag-badge">Open to Freelance</span>
+      
+      
 
       <div class="divider"></div>
 
@@ -1569,7 +1657,7 @@
           <div class="info-icon"><i class="fas fa-film"></i></div>
           <div class="info-text">
             Editing Software<br>
-            <span style="color:var(--text)">Premiere Pro • After Effects • DaVinci Resolve</span>
+            <span style="color:var(--text)">Premiere Pro • After Effects </span>
           </div>
         </div>
       </div>
@@ -1578,7 +1666,7 @@
 
       <div class="divider"></div>
 
-      
+
 
       <div class="divider"></div>
 
@@ -1655,6 +1743,67 @@
           </div>
         </div>
       </section>
+
+      <!-- WORK EXPERIENCE -->
+      <section id="experience" class="reveal">
+        <div class="section-label">
+          <div class="dot"></div>
+          <h2>Work Experience</h2>
+          <div class="section-label-line"></div>
+        </div>
+
+        <div class="experience-container">
+          <div class="experience-card">
+
+            <div class="experience-header">
+              <div>
+                <span class="experience-tag">Leadership & Creative Experience</span>
+                <h3>Social Media Managing Head</h3>
+                <h4>Samarpan Club – RCPIT, Shirpur</h4>
+              </div>
+
+              <span class="experience-date">2026 – Present</span>
+            </div>
+
+            <p class="experience-intro">
+              Leading social media and creative content initiatives for
+              Samarpan Club, a student organization dedicated to social
+              awareness and community service through activities such as
+              tree plantation drives and food distribution.
+            </p>
+
+            <ul class="experience-points">
+              <li>
+                Manage and maintain the club's social media platforms to
+                increase engagement and promote its activities.
+              </li>
+              <li>
+                Shoot and edit event videos, Instagram Reels, and
+                promotional content to showcase club initiatives.
+              </li>
+              <li>
+                Design creative banners, posters, and logos using
+                Adobe Photoshop while maintaining consistent branding.
+              </li>
+              <li>
+                Create engaging visual stories to highlight social
+                awareness campaigns and community activities.
+              </li>
+            </ul>
+            <br>
+            <br>
+            <div class="project-stack">
+              <span class="stack-pill">Social Media Management</span>
+              <span class="stack-pill">Premiere Pro</span>
+              <span class="stack-pill">Photoshop</span>
+              <span class="stack-pill">Content Creation</span>
+              <span class="stack-pill">After Effects</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
       <!-- SKILLS -->
       <section id="skills" class="reveal">
@@ -1794,76 +1943,320 @@
 
         <div class="projects-grid">
 
-          <!-- Project 1 -->
+
+          <!-- Foreign Language Cell Event -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);">
-              🎬
-            </div>
+            <a href="https://drive.google.com/file/d/1YbEfQP0SBta1TC5EG_J8ygf3jbdw6N1Y/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="project-thumb"
+              style="display: block; overflow: hidden; padding: 0;">
+              <img src="https://drive.google.com/thumbnail?id=1YbEfQP0SBta1TC5EG_J8ygf3jbdw6N1Y&sz=w1000"
+                alt="Foreign Language Cell Event" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+
             <div class="project-body">
-              <span class="project-tag">YouTube Editing</span>
-              <h3>Cinematic Video Edit</h3>
-              <p>Professional cinematic editing featuring seamless transitions, color grading, sound design, and
-                engaging storytelling.</p>
+              <span class="project-tag">Event Management</span>
+
+              <h3>Foreign Language Cell Event</h3>
+
+              <p>
+                An engaging foreign language learning event conducted with
+                guidance from a TCS mentor, encouraging students to explore
+                new languages, develop cross-cultural communication skills,
+                and discover global career opportunities.
+              </p>
 
               <div class="project-stack">
-                <span class="stack-pill">Premiere Pro</span>
-                <span class="stack-pill">After Effects</span>
-                <span class="stack-pill">Color Grading</span>
+                <span class="stack-pill">Foreign Languages</span>
+                <span class="stack-pill">Event Management</span>
+                <span class="stack-pill">TCS Mentorship</span>
               </div>
 
               <div class="project-links">
-                <a href="https://www.instagram.com/tsp.edits07/" target="_blank" class="proj-btn">
-                  <i class="fab fa-instagram"></i> View on Instagram
+                <a href="https://drive.google.com/file/d/1YbEfQP0SBta1TC5EG_J8ygf3jbdw6N1Y/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fab fa-google-drive"></i> View Event
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 -->
+
+
+          <!-- Podcast Video Editing -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);">
-              📱
-            </div>
+            <a href="https://drive.google.com/file/d/1X2HKqgE6ZKRqRfj78h--Zi8gYnzBlqkA/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="project-thumb"
+              style="display: block; overflow: hidden; padding: 0;">
+              <img src="https://drive.google.com/thumbnail?id=1X2HKqgE6ZKRqRfj78h--Zi8gYnzBlqkA&sz=w1000"
+                alt="Podcast Video Editing" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+
             <div class="project-body">
-              <span class="project-tag">Reels & Shorts</span>
-              <h3>Short Form Content</h3>
-              <p>High-retention Instagram Reels and YouTube Shorts featuring dynamic captions, speed ramps, and trending
-                editing styles.</p>
+              <span class="project-tag">Podcast Video Editing</span>
+
+              <h3>Podcast Stories & Conversations</h3>
+
+              <p>
+                Crafted an engaging podcast experience through professional
+                video editing, seamless transitions, dynamic pacing, and
+                storytelling techniques. Focused on highlighting meaningful
+                conversations, maintaining audience engagement, and creating
+                an immersive viewing experience with polished visuals and audio.
+              </p>
 
               <div class="project-stack">
                 <span class="stack-pill">Premiere Pro</span>
-                <span class="stack-pill">CapCut</span>
-                <span class="stack-pill">Motion Graphics</span>
-              </div>
-
-              <div class="project-links">
-                <a href="https://www.instagram.com/tsp.edits07/" target="_blank" class="proj-btn">
-                  <i class="fab fa-instagram"></i> View on Instagram
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
-              🎥
-            </div>
-            <div class="project-body">
-              <span class="project-tag">Commercial Edit</span>
-              <h3>Promotional Video</h3>
-              <p>Creative promotional video with smooth transitions, motion graphics, color correction, and professional
-                sound design.</p>
-
-              <div class="project-stack">
                 <span class="stack-pill">After Effects</span>
-                <span class="stack-pill">Premiere Pro</span>
+                <span class="stack-pill">Storytelling</span>
                 <span class="stack-pill">Sound Design</span>
               </div>
 
               <div class="project-links">
-                <a href="https://www.instagram.com/tsp.edits07/" target="_blank" class="proj-btn">
-                  <i class="fab fa-instagram"></i> View on Instagram
+                <a href="https://drive.google.com/file/d/1X2HKqgE6ZKRqRfj78h--Zi8gYnzBlqkA/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fab fa-google-drive"></i> Watch Podcast
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Ratan Tata Biography -->
+          <div class="project-card">
+            <a href="https://drive.google.com/file/d/1Pd63ByEu8f55lz2A3oJcn_ZcRxCBVk6I/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="project-thumb"
+              style="display: block; overflow: hidden; padding: 0;">
+              <img src="https://drive.google.com/thumbnail?id=1Pd63ByEu8f55lz2A3oJcn_ZcRxCBVk6I&sz=w1000"
+                alt="Ratan Tata Biography Documentary" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+
+            <div class="project-body">
+              <span class="project-tag">Cinematic Documentary</span>
+
+              <h3>Ratan Tata – A Legacy of Excellence</h3>
+
+              <p>
+                Created a cinematic biographical video showcasing the inspiring
+                life, achievements, leadership, and legacy of Ratan Tata.
+                Focused on engaging visual storytelling through carefully
+                selected B-roll footage, dynamic motion graphics, smooth
+                transitions, and impactful editing to deliver an immersive
+                documentary experience.
+              </p>
+
+              <div class="project-stack">
+                <span class="stack-pill">Premiere Pro</span>
+                <span class="stack-pill">After Effects</span>
+                <span class="stack-pill">B-Roll Editing</span>
+                <span class="stack-pill">Motion Graphics</span>
+                <span class="stack-pill">Visual Storytelling</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1Pd63ByEu8f55lz2A3oJcn_ZcRxCBVk6I/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fab fa-google-drive"></i> Watch Documentary
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Snehband - Social Impact Event -->
+          <div class="project-card">
+            <a href="https://drive.google.com/file/d/1T022h0hufNsg-T-LNp-Esiv9YGg1r_y0/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="project-thumb"
+              style="display: block; overflow: hidden; padding: 0;">
+              <img src="https://drive.google.com/thumbnail?id=1T022h0hufNsg-T-LNp-Esiv9YGg1r_y0&sz=w1000"
+                alt="Snehband Winter Clothing Distribution Event"
+                style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+
+            <div class="project-body">
+              <span class="project-tag">Social Impact · Event Highlights</span>
+
+              <h3>Snehband – Spreading Warmth</h3>
+
+              <p>
+                Captured and edited a heartwarming event organized by
+                Samarpan Club, featuring the distribution of sweaters
+                to underprivileged children at Zilla Parishad School.
+                Focused on emotional storytelling, meaningful event
+                highlights, engaging visuals, and smooth transitions
+                to showcase the spirit of kindness, care, and community
+                service.
+              </p>
+
+              <div class="project-stack">
+                <span class="stack-pill">Premiere Pro</span>
+                <span class="stack-pill">Event Video Editing</span>
+                <span class="stack-pill">Visual Storytelling</span>
+                <span class="stack-pill">Social Impact</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1T022h0hufNsg-T-LNp-Esiv9YGg1r_y0/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fab fa-google-drive"></i> Watch Event Video
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Annasankalp - Food Donation -->
+          <div class="project-card">
+            <a href="https://drive.google.com/file/d/1xOJG0ycezv1Ksg4wxD8mZ67UVfxkmqeb/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="project-thumb"
+              style="display: block; overflow: hidden; padding: 0;">
+              <img src="https://drive.google.com/thumbnail?id=1xOJG0ycezv1Ksg4wxD8mZ67UVfxkmqeb&sz=w1000"
+                alt="Annasankalp Food Donation Event" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+
+            <div class="project-body">
+              <span class="project-tag">Social Impact · Event Highlights</span>
+
+              <h3>Annasankalp – Sharing Happiness</h3>
+
+              <p>
+                Captured and edited a meaningful food donation initiative
+                organized by Samarpan Club, reflecting the spirit of
+                kindness, generosity, and community service. Focused on
+                visual storytelling, event highlights, smooth transitions,
+                and engaging sequences to showcase the importance of
+                sharing food and spreading happiness among those in need.
+              </p>
+
+              <div class="project-stack">
+                <span class="stack-pill">Premiere Pro</span>
+                <span class="stack-pill">Event Video Editing</span>
+                <span class="stack-pill">Visual Storytelling</span>
+                <span class="stack-pill">Social Impact</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1xOJG0ycezv1Ksg4wxD8mZ67UVfxkmqeb/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fab fa-google-drive"></i> Watch Event Video
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- First Freelance Client – Stock Market Tips -->
+          <div class="project-card">
+            <a href="https://drive.google.com/file/d/197jeeUao7nhDTi7GFUTnQf8dewqcxnMf/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="project-thumb"
+              style="display: block; overflow: hidden; padding: 0;">
+              <img src="https://drive.google.com/thumbnail?id=197jeeUao7nhDTi7GFUTnQf8dewqcxnMf&sz=w1000"
+                alt="Stock Market Video Editing Project" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+
+            <div class="project-body">
+              <span class="project-tag">Freelance Project · Finance</span>
+
+              <h3>Stock Market – Tips & Updates</h3>
+
+              <p>
+                My first freelance client project, creating engaging video content
+                for sharing stock market tips, market updates, and financial
+                information. Focused on clean visuals, animated text, dynamic
+                transitions, and an engaging presentation to make information
+                easy to follow and visually appealing.
+              </p>
+
+              <div class="project-stack">
+                <span class="stack-pill">Premiere Pro</span>
+                <span class="stack-pill">After Effects</span>
+                <span class="stack-pill">Photoshop</span>
+                <span class="stack-pill">Video Editing</span>
+                <span class="stack-pill">Motion Graphics</span>
+                <span class="stack-pill">Freelancing</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/197jeeUao7nhDTi7GFUTnQf8dewqcxnMf/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fab fa-google-drive"></i> Watch Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Motion Graphics Showcase -->
+          <div class="project-card">
+            <a href="https://drive.google.com/file/d/1akhrMD83JT5JfA-v0wuX0IDgf1hXKaQW/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="project-thumb"
+              style="display: block; overflow: hidden; padding: 0;">
+              <img src="https://drive.google.com/thumbnail?id=1akhrMD83JT5JfA-v0wuX0IDgf1hXKaQW&sz=w1000"
+                alt="Motion Graphics Showcase" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+
+            <div class="project-body">
+              <span class="project-tag">Motion Graphics & Animation</span>
+
+              <h3>Creative Motion Graphics Showcase</h3>
+
+              <p>
+                A creative showcase of motion graphics and visual animation,
+                featuring dynamic transitions, animated typography, smooth
+                movements, and eye-catching visual effects. Focused on bringing
+                creative ideas to life through engaging animations, visual
+                composition, and professional motion design.
+              </p>
+
+              <div class="project-stack">
+                <span class="stack-pill">After Effects</span>
+                <span class="stack-pill">Motion Graphics</span>
+                <span class="stack-pill">2D Animation</span>
+                <span class="stack-pill">Visual Effects</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1akhrMD83JT5JfA-v0wuX0IDgf1hXKaQW/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fab fa-google-drive"></i> Watch Showcase
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Editing Portfolio Showcase -->
+          <div class="project-card">
+            <a href="https://drive.google.com/file/d/1Jnu5m0ULnZt0Jdq9XTmMyI39ygcC5gnU/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="project-thumb"
+              style="display: block; overflow: hidden; padding: 0;">
+              <img src="https://drive.google.com/thumbnail?id=1Jnu5m0ULnZt0Jdq9XTmMyI39ygcC5gnU&sz=w1000"
+                alt="Video Editing Portfolio Showcase" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+
+            <div class="project-body">
+              <span class="project-tag">Video Editing · Creative Showcase</span>
+
+              <h3>Video Editing – Creative Portfolio</h3>
+
+              <p>
+                A creative showcase of my video editing skills across different
+                styles and formats. Featuring cinematic edits, social media reels,
+                promotional videos, motion graphics, visual effects, and creative
+                storytelling. Demonstrates my ability to transform ideas into
+                engaging visual experiences using professional editing tools.
+              </p>
+
+              <div class="project-stack">
+                <span class="stack-pill">Premiere Pro</span>
+                <span class="stack-pill">Photoshop</span>
+                <span class="stack-pill">Blender</span>
+                <span class="stack-pill">After Effects</span>
+                <span class="stack-pill">Motion Graphics</span>
+                <span class="stack-pill">Visual Effects</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1Jnu5m0ULnZt0Jdq9XTmMyI39ygcC5gnU/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fab fa-google-drive"></i> Watch Portfolio Video
                 </a>
               </div>
             </div>
